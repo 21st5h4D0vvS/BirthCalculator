@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:gravity="bottom"
+	android:padding="16dp">
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp">
+
+		<GridLayout
+			columnCount="4"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			rowCount="2">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_width="wrap_content"
+				android:text="Days"
+				android:layout_row="0"
+				android:layout_column="0"
+				style="@style/headerOutputDataContext"
+				android:alpha="0.6"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_width="wrap_content"
+				android:text=":"
+				android:layout_row="0"
+				android:layout_column="1"
+				style="@style/headerOutputDataContext"
+				android:alpha="0.6"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_width="wrap_content"
+				android:text="0"
+				android:layout_row="0"
+				android:layout_column="2"
+				style="@style/headerOutputDataContext"
+				android:alpha="0.6"
+				android:id="@+id/outputDays"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_width="wrap_content"
+				android:text="Years"
+				android:layout_row="1"
+				android:layout_column="0"
+				style="@style/headerOutputDataContext"
+				android:alpha="0.6"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_width="wrap_content"
+				android:text=":"
+				android:layout_row="1"
+				android:layout_column="1"
+				style="@style/headerOutputDataContext"
+				android:alpha="0.6"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_width="wrap_content"
+				android:text="0"
+				android:layout_row="1"
+				android:layout_column="2"
+				style="@style/headerOutputDataContext"
+				android:alpha="0.6"
+				android:id="@+id/outputYears"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="wrap_content"
+				android:text="Customize Fixed Date"
+				android:layout_row="0"
+				android:layout_column="3"
+				android:layout_gravity="right"
+				android:gravity="top"
+				android:textColor="#0089E0"
+				android:textStyle="bold"
+				android:background="#00000000"
+				android:paddingLeft="0dp"
+				android:paddingRight="0dp"
+				android:id="@+id/updateFixedDate"
+				android:textSize="14sp"
+				style="@style/headerOutputDataContext"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="wrap_content"
+				android:text="Reset"
+				android:layout_row="1"
+				android:layout_column="3"
+				android:layout_gravity="right"
+				android:gravity="top"
+				android:textColor="#0089E0"
+				android:textStyle="bold"
+				android:background="#00000000"
+				android:paddingLeft="0dp"
+				android:paddingRight="0dp"
+				android:id="@+id/resetButton"
+				android:textSize="14sp"
+				style="@style/headerOutputDataContext"/>
+
+		</GridLayout>
+
+		<TextView
+			android:layout_height="match_parent"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="match_parent"
+			android:text="00-00-0000"
+			android:gravity="bottom|center_vertical|end"
+			android:textSize="50sp"
+			android:layout_marginTop="18dp"
+			android:id="@+id/headerDataInput"
+			android:paddingBottom="10dp"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+

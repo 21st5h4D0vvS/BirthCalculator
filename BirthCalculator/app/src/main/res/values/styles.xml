@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="systemColorPrimary">#303437</color>
+	<color name="systemColorPrimaryDark">#24282B</color>
+	<color name="systemColorAccent">#A0A0A0</color>
+	
+    <style name="MainTheme" parent="Theme.AppCompat">
+		<item name="windowNoTitle">true</item>
+		<item name="colorPrimary">@color/systemColorPrimary</item>
+		<item name="colorPrimaryDark">@color/systemColorPrimaryDark</item>
+		<item name="colorAccent">@color/systemColorAccent</item>
+	</style>
+	
+	<style name="buttonStyle">
+		<item name="android:textSize">30sp</item>
+		<item name="android:background">#00000000</item>
+		<item name="android:paddingTop">16sp</item>
+		<item name="android:paddingBottom">16sp</item>
+		<item name="android:textColor">@color/systemColorAccent</item>
+	</style>
+	
+	<style name="functionalButtonStyle">
+		<item name="android:background">#00000000</item>
+		<item name="android:textSize">12sp</item>
+		<item name="android:paddingTop">16sp</item>
+		<item name="android:paddingBottom">16sp</item>
+		<item name="android:textColor">#505457</item>
+	</style>
+	
+	<style name="headerOutputDataContext">
+		<item name="android:padding">8sp</item>
+	</style>
+</resources>
